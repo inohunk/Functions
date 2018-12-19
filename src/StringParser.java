@@ -32,4 +32,25 @@ public class StringParser {
         }
         return String.valueOf(chars);
     }
+    public String reverseStringWithCharAt(String inputString) {
+        int stringLength = inputString.length();
+        String result = "";
+        for (int i = 0; i < stringLength; i++) {
+            result = inputString.charAt(i) + result;
+        }
+        return result;
+    }
+    public String reverseWithCharArray(String inputString) {
+        char[] charArray = inputString.toCharArray();
+        String resultString = "";
+        for (int i = charArray.length - 1; i >= 0; i--) {
+            resultString += charArray[i];
+        }
+        return resultString;
+    }
+    public String reverseWithStringBuffer(String inputString)
+    {
+        String reversed = new StringBuffer(inputString).reverse().toString();
+        return reversed;
+    }
 }
