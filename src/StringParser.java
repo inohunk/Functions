@@ -1,9 +1,5 @@
 public class StringParser {
-    /**
-     * Функция, которая возвращает перевернутую строку
-     * @param chars
-     * @return возврат перевернутой строки
-     */
+
     public String reverseText(char[] chars)
     {
         int index = chars.length - 1;
